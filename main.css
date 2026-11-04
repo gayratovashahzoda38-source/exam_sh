@@ -5,30 +5,63 @@
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #F5FAFF;
 }
-header{
-    max-width: 1440px;
+
+header {
+    max-width: 1200px;
     width: 100%;
-    margin-left:37px;
+    overflow-x: hidden;
 }
 
-
+main {
+    max-width: 1200px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.vector {
+    position: fixed;
+    top: 300px;
+    left: 0;
+}
 
 .navbar {
-    max-width: 1440px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    height:140px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.heroo {
+    max-width: 1200px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 18px;
-    padding-top: 20px;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
+
 
 
 .logo {
@@ -42,11 +75,11 @@ header{
 
 .nav-links {
     display: flex;
-    gap: 36px;
-
+    flex-wrap: wrap;
+    gap: 12px ;
 }
 
-a{
+a {
     color: #1B1A18;
     font-size: 15px;
     font-weight: 500;
@@ -71,47 +104,41 @@ a{
     cursor: pointer;
 }
 
-.login-btn:hover {
+.login__btn:hover {
     background: #2f80ed;
     color: white;
     box-shadow: 4px 1px 2px 1px #0076F566;
 }
 
-.heroo {
-    max-width: 1440px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-bottom: 80px;
-    padding-left: 20px;
-    gap: 40px;
-    flex-wrap: wrap;
-}
+
 
 .hero-text {
-    max-width: 400px;
+    max-width: 620px;
     width: 100%;
+    font-family: 'Fira Code', monospace;
 }
 
 .hero-text h1 {
-    font-family: 'Courier New', monospace;
-    font-size: 36px;
+    font-family: 'Fira Code', monospace;
+    font-size: 59px;
     line-height: 1.3;
+    font-weight: 500;
     color: black;
-    font-weight: 700;
-}
-
-.blue{
-    color: #2f80ed;
 }
 
 .hero-btns {
     display: flex;
     gap: 16px;
-    margin-top: 32px;
+    margin-top: 48px;
+}
+
+
+.vector img {
+    display: block;
+}
+
+.blue {
+    color: #2f80ed;
 }
 
 .btn-filled {
@@ -130,18 +157,16 @@ a{
 .btn-filled:hover {
     background: white;
     color: #2f80ed;
-    box-shadow: 4px 1px 2px 1px #0076F566;
+
 }
 
-.btn-outline:hover {
-    color: white;
-    background:#2f80ed;}
-.btn-outline{
+.btn-outline {
     padding: 12px 28px;
     border-radius: 6px;
     font-size: 15px;
     font-weight: 600;
-    cursor: pointer;
+    color: #2f80ed;
+
 }
 
 .btn-outline:hover {
@@ -157,84 +182,20 @@ a{
     max-width: 480px;
 }
 
-.img{
-    max-width: 600px;
+.img {
+    max-width: 480px;
     width: 100%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section {
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     padding: 20px;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     padding: 10px;
 }
@@ -254,14 +215,13 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-left: 25px;
     margin-top: 20px;
-
 }
 
 .box {
     max-width: 354px;
     width: 100%;
+    min-width: 0;
     padding-bottom: 20px;
     box-shadow: 1px 1px 3px 1px #00000026;
     border-radius: 10px;
@@ -287,7 +247,6 @@ section {
 }
 
 .box__p {
-
     text-align: center;
     color: #514D48;
     font-family: Inter, sans-serif;
@@ -302,8 +261,6 @@ section {
     justify-content: center;
     gap: 20px;
     margin-top: 9px;
-    margin-left: 37px;
-
 }
 
 .box_one:hover {
@@ -311,10 +268,9 @@ section {
 }
 
 .box_one {
-
     max-width: 485px;
-    height: 540px;
     width: 100%;
+    height: 540px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -326,7 +282,6 @@ section {
 }
 
 .box_text {
-
     margin-top: 2px;
     text-align: center;
     font-family: Inter, sans-serif;
@@ -349,37 +304,37 @@ section {
 
 .hero {
     display: flex;
-    margin-left: 25px;
+    margin-left: 2px;
     gap: 20px;
-}
-
-.hero__p {
-    width: 423px;
-    margin-top: 200px;
-    margin-left: 120px;
-    color: #1B1A18;
-    font-family: Inter, sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 34px;
-
-}
-
-.div__p {
-    width: 482px;
-    margin-top: 16px;
-    margin-left: 100px;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #514D48;
 }
 
 .hero img {
     max-width: 738px;
     width: 100%;
     margin-top: 42px;
+}
+
+.hero__p {
+
+    margin-top: 200px;
+    margin-left: 30px;
+    color: #1B1A18;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 34px;
+}
+
+.div__p {
+    width: 100%;
+    max-width: 482px;
+    margin-top: 16px;
+    margin-left: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #514D48;
 }
 
 .text__two {
@@ -393,8 +348,6 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-
-
 }
 
 .text__two span {
@@ -403,8 +356,6 @@ section {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-
-
 }
 
 
@@ -415,42 +366,46 @@ section {
 }
 
 .button p {
-    margin-top: 19px;
+    margin-top: 11px;
 }
 
 .button {
     color: #0076F5;
     margin-top: 36px;
-    margin-left:20px;
+    margin-left: 20px;
     text-align: center;
     border: 1px solid #0076F5;
     max-width: 195px;
-
     width: 100%;
-    height: 65px;
+    height: 45px;
     background: white;
     border-radius: 10px;
-
-
 }
+
 
 .box__three {
     display: flex;
-    margin-left: 37px;
-    gap: 60px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .boxx:hover {
-    box-shadow: 4px 8px 5px 1px #00000026
+    box-shadow: 4px 8px 5px 1px #00000026;
+}
+
+.boxx img {
+    display: block;
+    margin-left: 5px;
+    width: 100%;
 }
 
 .boxx {
-    max-width: 570px;
+    max-width: 400px;
     width: 100%;
-    height: 460px;
+
+    padding-bottom: 20px;
     margin-top: 29px;
     border-radius: 10px;
-
 }
 
 .boxx h3 {
@@ -463,71 +418,71 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    width: 317px;
+    margin-right: 25px;
     margin-left: 25px;
     margin-top: 31px;
-    left: 223px;
+}
 
+.boxx_one {
+    max-width: 354px;
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.boxx_one:hover {
+    box-shadow: 1px 1px 15px 1px #00000026;
 }
 
 .boxx_one img {
+    display: block;
     margin-top: 19px;
-    margin-left: 80px;
 }
-.one__p{
-    color:#1B1A18;
-    font-family: Inter,sans-serif;
+
+.one__p {
+    color: #1B1A18;
+    font-family: Inter, sans-serif;
     font-weight: 500;
     font-size: 25px;
     line-height: 34px;
     text-align: center;
-
 }
-.p__text{
-    width: 167px;
+
+.p__text {
     margin-top: 14px;
-    margin-left: 60px;
     text-align: center;
-    font-family: Inter,sans-serif;
+    font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 19px;
     line-height: 28px;
-
 }
-.boxx_one {
-    max-width: 354px;
+
+.lorem {
     width: 100%;
-    height: 476px;
-    border-radius: 10px;
-
-}
-.boxx_one:hover{
-    box-shadow: 1px 1px 15px 1px #00000026
-}
-
-
-.lorem{width: 322px;
     margin-top: 39px;
-    left: 223px;
-    font-family: Inter,sans-serif;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-
 }
 
-@media (max-width: 500px) {
-    body{
-        overflow-x: hidden;
-    }
+
+@media (max-width: 375px) {
 
     main {
         width: 100%;
     }
 
-
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
     .navbar {
         padding-top: 15px;
@@ -567,6 +522,11 @@ section {
 
     .hero-text h1 {
         font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .vector {
+        display: none;
     }
 
     .hero-btns {
@@ -599,6 +559,7 @@ section {
 
     .text {
         margin-top: 20px;
+        margin-left: 10px;
         padding-bottom: 10px;
         font-size: 28px;
         line-height: 36px;
@@ -607,7 +568,7 @@ section {
 
     .box__one {
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 12px;
         margin-top: 10px;
     }
@@ -623,21 +584,13 @@ section {
         width: 52px;
         height: 52px;
     }
-    .p__text{
-        text-align: center;
-        width:100%;
-    }
 
     .box__text {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 22px;
+        line-height: 30px;
         padding-top: 6px;
     }
-    .lorem{
-        width: 100%;
-        text-align: center;
 
-    }
     .box__p {
         font-size: 13px;
         line-height: 18px;
@@ -656,18 +609,16 @@ section {
 
     .hero__p {
         width: 100%;
+        max-width: 100%;
         margin-top: 10px;
-        margin-left: 0;
         font-size: 20px;
         line-height: 28px;
     }
 
     .div__p {
         width: 100%;
+        max-width: 100%;
         margin-top: 10px;
-        margin-left: 0;
-
-
     }
 
 
@@ -680,7 +631,7 @@ section {
 
     .box_one {
         max-width: 100%;
-        padding-bottom: 20px;
+        height: 600px;
         box-shadow: 1px 1px 6px 1px #00000020;
     }
 
@@ -738,13 +689,12 @@ section {
 
     .boxx {
         max-width: 100%;
-        height: auto;
-        margin-top: 0;
         padding-bottom: 20px;
         box-shadow: 1px 1px 6px 1px #00000020;
     }
 
     .boxx img {
+        margin-left: 5px;
         width: 100%;
     }
 
@@ -754,8 +704,7 @@ section {
         margin-left: 15px;
     }
 
-    .boxx p {
-        width: 100%;
+    .boxx__p {
         margin-top: 10px;
         margin-right: 15px;
         margin-left: 15px;
@@ -764,20 +713,15 @@ section {
 
     .boxx_one {
         max-width: 100%;
-        height: auto;
         padding-right: 5px;
         padding-bottom: 20px;
         padding-left: 5px;
     }
 
     .boxx_one img {
-        display: block;
         width: 100%;
         max-width: 220px;
-        height: auto;
         margin-top: 15px;
-        margin-right: auto;
-        margin-left: auto;
     }
 
     .one__p {
@@ -787,10 +731,13 @@ section {
     }
 
     .p__text {
-        width: 100%;
-        height: auto;
         margin-top: 8px;
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .lorem {
+        width: 100%;
+        text-align: center;
     }
 }
